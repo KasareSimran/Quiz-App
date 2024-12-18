@@ -5,16 +5,16 @@ import {data} from '../assets/data'
 import './Quiz.css'
 
 const Quiz =()=>{
-    const [index,setIndex]=useState(0);
+    const [index,setIndex]=useState(2);
     const [question,setQuestion]=useState(data[index])
 
 
     const checkAns =(e,ans)=>{
         if(question.ans===ans){
-            e.target.classList.ans("correct")
+            e.target.classList.add("correct")
         }
         else{
-            e.target.classList.ans("wrong")
+            e.target.classList.add("wrong")
         }
     }
 

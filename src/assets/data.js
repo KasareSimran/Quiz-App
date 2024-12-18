@@ -4,34 +4,40 @@ export const data = [
         option1: "Modem",
         option2: "LAN Cable",
         option3: "Pen Drive",
-        option4: "Router"
+        option4: "Router",
+        ans: 1
     },
     {
-        question: "What does CPU stand for?",
-        option1: "Central Processing Unit",
-        option2: "Central Programming Unit",
-        option3: "Control Processing Unit",
-        option4: "Central Peripheral Unit"
+        question: "What is the main function of an operating system?",
+        option1: "To create websites",
+        option2: "To manage system resources",
+        option3: "To run games",
+        option4: "To edit documents",
+        ans: 2
     },
     {
-        question: "Which programming language is known as the 'language of the web'?",
+        question: "Which programming language is used for web development?",
         option1: "Python",
-        option2: "JavaScript",
-        option3: "C++",
-        option4: "Java"
+        option2: "Java",
+        option3: "HTML",
+        option4: "C++",
+        ans: 3
     },
     {
-        question: "What does HTML stand for?",
-        option1: "HyperText Markup Language",
-        option2: "HighText Machine Language",
-        option3: "HyperText Modern Language",
-        option4: "Hyperlink Text Markup Language"
+        question: "What is the smallest unit of data in a computer?",
+        option1: "Bit",
+        option2: "Byte",
+        option3: "Nibble",
+        option4: "Word",
+        ans: 1
     },
     {
-        question: "Which of the following is not an operating system?",
-        option1: "Linux",
-        option2: "Windows",
-        option3: "Oracle",
-        option4: "MacOS"
+        question: "Which of the following is not an input device?",
+        option1: "Mouse",
+        option2: "Keyboard",
+        option3: "Monitor",
+        option4: "Scanner",
+        ans: 3
     }
+
 ];
