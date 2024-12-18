@@ -1,18 +1,32 @@
 
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
+import {data} from '../assets/data'
 import './Quiz.css'
 
 const Quiz =()=>{
+    const [index,setIndex]=useState(0);
+    const [question,setQuestion]=useState(data[index])
+
+
+    const checkAns =(e,ans)=>{
+        if(question.ans===ans){
+            e.target.classList.ans("correct")
+        }
+        else{
+            e.target.classList.ans("wrong")
+        }
+    }
+
     return(<div className="container">
         <h1>Quiz App</h1>
         <hr/>
-        <h2>1. Which device is use for internet connection?</h2>
+        <h2>{index+1}. {question.question}</h2>
         <ul>
-            <li>Modem</li>
-            <li>Router</li>
-            <li>LAN Cable</li>
-            <li>Pen derive</li>
+            <li onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
+            <li onClick={(e)=>{checkAns(e,2)}}>{question.option2}</li>
+            <li onClick={(e)=>{checkAns(e,3)}}>{question.option3}</li>
+            <li onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
         </ul>
         <button>Next</button>
         <div className="index">1 of 5 questions</div>
