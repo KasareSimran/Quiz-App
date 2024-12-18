@@ -5,7 +5,7 @@ import {data} from '../assets/data'
 import './Quiz.css'
 
 const Quiz =()=>{
-    const [index,setIndex]=useState(2);
+    const [index,setIndex]=useState(0);
     const [question,setQuestion]=useState(data[index])
 
 
