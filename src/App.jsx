@@ -6,4 +6,4 @@ const App =()=>{
   <Quiz/>
     </>)
 }
-export default App
+export default App;
